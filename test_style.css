@@ -1,0 +1,117 @@
+/* ====== [ Main ] ====== */
+body {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Source Sans Pro";
+}
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+.leftside, .rightside p {
+    font-size: 16px;
+}
+.container {
+    position: relative;
+    width: 920px;
+    height: 584.03px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+}
+label {
+    display: block;
+    text-align: left;
+}
+.loginform > label > img {
+    display: block;
+}
+input {
+    border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+    outline: none;
+    background: none;
+}
+/* ====== [ Backside (Background, Buttons, Text) ] ====== */
+.backside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -63%);
+    width: 920px;
+    height: 420px;
+    background-color:#273043;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center; /*Vertikāli centrēts*/
+    text-align: left;
+}
+.backside > .leftside, .rightside {
+    width: 280px;
+    height: 212px;
+    color: white;
+    margin: 20px;
+    padding: 70px;
+    line-height: 1.5;
+}
+.backside button {
+    padding:5px 10px;
+    border:2px solid #48abfe;
+    font-size:12px;
+    background: #273043;
+    opacity: 0.9;
+    color:#ffffff;
+    border-radius:30px;
+    cursor:pointer;
+}
+/* ====== [ Frontside (Forms, Buttons, Text) ] ====== */
+.frontside {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -62%);
+    width: 460px;
+    height: 460px;
+    background-color: white;
+    transition:all 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border:1px #707070;
+}
+.container .frontside .registerform {
+    display:none;
+  }
+  .container.active .frontside {
+    left:0%;
+  }
+  .container.active .frontside .registerform {
+    display:block;
+  }
+
+
+
+.registerform, .loginform {
+    margin: 40px;
+    padding: 50px;
+}
+.header-content-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ====== [ Footer ] ====== */
+.footer {
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    color: #A7B3CB;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+}
